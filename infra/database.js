@@ -10,7 +10,7 @@ async function query(queryObject) {
     ssl: process.env.NODE_ENV === 'development' ? false : true,
   });
   
-  console.log("Credenciais do postgres: ", {
+  /*console.log("Credenciais do postgres: ", {
     host: process.env.POSTGRES_HOST,
     port: process.env.POSTGRES_PORT,
     user: process.env.POSTGRES_USER,
@@ -18,7 +18,7 @@ async function query(queryObject) {
     password: process.env.POSTGRES_PASSWORD,
     ssl: process.env.NODE_ENV === 'development' ? false : true,
     
-  })
+  })*/
   
   try {
     await client.connect();
